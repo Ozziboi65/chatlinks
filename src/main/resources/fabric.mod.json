@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "chatlinks",
+	"version": "${version}",
+	"name": "chatlinks",
+	"description": "Allows you to open links sent in the chat, purely client side!",
+	"authors": [
+		"sigmacat123"
+	],
+	"contact": {
+		"source code": "https://github.com/Ozziboi65/chatlinks"
+	},
+	"license": "MIT",
+	"icon": "assets/chatlinks/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.chatlinks.client.ChatlinksClient"
+		]
+	},
+	"mixins": [
+		"chatlinks.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
